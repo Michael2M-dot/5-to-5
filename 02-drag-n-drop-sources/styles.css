@@ -23,7 +23,7 @@ body {
 
 .col-header {
   width: 150px;
-  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  box-shadow: 4px 4px 9px rgba(177, 163, 163, 0.36);
   border-radius: 20px;
   padding: 0.8rem 1rem;
   color: #fff;
@@ -33,7 +33,7 @@ body {
   width: 150px;
   height: 66px;
   border: 1px solid #eee;
-  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  box-shadow: 4px 4px 9px rgba(221, 84, 84, 0.36);
   border-radius: 20px;
   background: #f7f6f7;
   padding: 0.8rem 1rem;
@@ -61,4 +61,28 @@ body {
 
 .done {
   background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.hold {
+  border: 2px solid rgb(54, 219, 237);
+  box-shadow: none;
+}
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  border-top: 2px solid rgb(60, 193, 241);
+}
+
+.processing {
+  color: blue;
+  box-shadow: 4px 4px 9px rgba(13, 39, 238, 0.36);
+}
+
+.finished {
+  color:rgb(115, 236, 115);
+  text-decoration: line-through;
+  box-shadow: 4px 4px 9px rgba(9, 219, 68, 0.36);
 }
