@@ -51,7 +51,3 @@ document.addEventListener('keydown', (e) => {
     changeSlide('up');
   }
 })
-
-document.addEventListener('scroll', (e) => {
-  console.log(e.key);
-})
