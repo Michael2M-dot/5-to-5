@@ -6,25 +6,25 @@ for(let i = 0; i < SQUARES_NUM; i++) {
   const square = document.createElement('div');
   square.classList.add('square');
 
-  square.addEventListener('mouseover', () => setColor(square))
-  square.addEventListener('mouseleave', () => removeColor(square))
+  square.addEventListener('mouseover', setColor);
+  square.addEventListener('mouseleave', removeColor);
 
   board.append(square);
 }
 
-function setColor(elm) {
+function setColor(e) {
+  const elm = e.target;
   const color = getRandomColor();
   elm.style.backgroundColor = `${color}`;
   elm.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
 }
 
-function removeColor(elm) {
+function removeColor(e) {
+  const elm = e.target;
   elm.style.backgroundColor = 'azure';
   elm.style.boxShadow = `0 0 2px burlywood`
 }
 
 function getRandomColor(){
-  const index = Math.floor(Math.random() * colors.length);
-
-  return colors[index];
+  return colors[Math.floor(Math.random() * colors.length)];
 }
